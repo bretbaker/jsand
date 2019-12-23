@@ -1,6 +1,11 @@
-function filterUnique(arr) {
-  console.log(arr.filter(x => new Set(x).size == x.length));
-  return arr.filter(x => new Set(x).size == x.length);
-}
+const convDate = date => {
+  let d = new Date(date);
+  console.log(d.getMonth());
+  console.log(d.getDate());
+  console.log(d.getFullYear());
+  let a = [];
+  a.push(d.getMonth() + 1, d.getDate(), d.getFullYear());
+  console.log(a);
+};
 
-filterUnique(['abb', 'abc', 'abcdb', 'aea', 'bbb']);
+convDate('January 9, 2019');
