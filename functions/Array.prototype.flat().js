@@ -1,4 +1,4 @@
-const flatten = arr => {
+const dotFlat = arr => {
   arr = arr
     .toString()
     .split('')
@@ -16,9 +16,9 @@ const flatten = arr => {
   return console.log(arr);
 };
 
-flatten([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]);
-flatten([true, false], [false, false]);
-flatten([
+dotFlat([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]);
+dotFlat([true, false], [false, false]);
+dotFlat([
   ['a', 'b'],
   ['c', 'd']
 ]);
