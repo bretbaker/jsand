@@ -1,24 +1,19 @@
-const flatten = arr => {
-  arr = arr
+const concat = (...args) => {
+  args = args
     .toString()
     .split('')
     .join('')
     .split(',');
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 'true') {
-      arr[i] = true;
-    } else if (arr[i] === 'false') {
-      arr[i] = false;
-    } else if (parseFloat(arr[i])) {
-      arr[i] = parseFloat(arr[i]);
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === 'true') {
+      args[i] = true;
+    } else if (args[i] === 'false') {
+      args[i] = false;
+    } else if (parseFloat(args[i])) {
+      args[i] = parseFloat(args[i]);
     }
   }
-  return console.log(arr);
+  return console.log(args);
 };
 
-flatten([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]);
-flatten([true, false], [false, false]);
-flatten([
-  ['a', 'b'],
-  ['c', 'd']
-]);
+concat([1, 2, 3], [4, 5], [6, 7]);
