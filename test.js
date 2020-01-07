@@ -1,10 +1,6 @@
-const rev = n => {
-  let a = [];
-  n = Math.abs(n)
-    .toString()
-    .split('');
-  for (let i = n.length - 1; i > -1; i--) a.push(n[i]);
-  console.log(a.join(''));
+const uniqueSort = a => {
+  let s = new Set(a);
+  return console.log(Array.from(s).sort((a, b) => a - b));
 };
 
-rev(-122157);
+uniqueSort([1, 5, 8, 2, 3, 4, 4, 4, 10]);
