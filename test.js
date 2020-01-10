@@ -1,6 +1,10 @@
-const uniqueSort = a => {
-  let s = new Set(a);
-  return console.log(Array.from(s).sort((a, b) => a - b));
-};
+function hackerSpeak(str) {
+  str = str.replace(/a/gi, '4');
+  str = str.replace(/e/gi, '3');
+  str = str.replace(/i/gi, '1');
+  str = str.replace(/o/gi, '0');
+  str = str.replace(/s/gi, '5');
+  return console.log(str);
+}
 
-uniqueSort([1, 5, 8, 2, 3, 4, 4, 4, 10]);
+hackerSpeak('javascript is cool');
