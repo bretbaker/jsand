@@ -1,10 +1,9 @@
-function hackerSpeak(str) {
-  str = str.replace(/a/gi, '4');
-  str = str.replace(/e/gi, '3');
-  str = str.replace(/i/gi, '1');
-  str = str.replace(/o/gi, '0');
-  str = str.replace(/s/gi, '5');
-  return console.log(str);
-}
+const evenOddTransform = (arr, n) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) arr[i] -= 2 * n;
+    else arr[i] += 2 * n;
+  }
+  return console.log(arr);
+};
 
-hackerSpeak('javascript is cool');
+evenOddTransform([3, 4, 9], 3);
