@@ -1,9 +1,11 @@
-const evenOddTransform = (arr, n) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) arr[i] -= 2 * n;
-    else arr[i] += 2 * n;
-  }
-  return console.log(arr);
+const equal = (a, b, c) => {
+  if (a === b && a === c) return console.log(3);
+  if (a === b && a !== c) return console.log(2);
+  if (a !== b && a === c) return console.log(2);
+  if (a !== b && b === c) return console.log(2);
+  else return console.log(0);
 };
 
-evenOddTransform([3, 4, 9], 3);
+equal(1, 2, 3);
+equal(1, 1, 1);
+equal(1, 1, 2);
