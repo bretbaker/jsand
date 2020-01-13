@@ -1,11 +1,18 @@
-const equal = (a, b, c) => {
-  if (a === b && a === c) return console.log(3);
-  if (a === b && a !== c) return console.log(2);
-  if (a !== b && a === c) return console.log(2);
-  if (a !== b && b === c) return console.log(2);
-  else return console.log(0);
+const reverse = str => {
+  str = str.split(' ');
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].length > 4) {
+      str[i] = str[i].split('');
+      let a = [];
+      for (let j = str[i].length - 1; j > -1; j--) {
+        a.push(str[i][j]);
+      }
+      str[i] = a.join('');
+    }
+  }
+  return console.log(str.join(' '));
 };
 
-equal(1, 2, 3);
-equal(1, 1, 1);
-equal(1, 1, 2);
+reverse(
+  'Reverse the order of every word greater than or equal to five characters.'
+);
