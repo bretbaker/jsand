@@ -1,18 +1,11 @@
-const reverse = str => {
-  str = str.split(' ');
-  for (let i = 0; i < str.length; i++) {
-    if (str[i].length > 4) {
-      str[i] = str[i].split('');
-      let a = [];
-      for (let j = str[i].length - 1; j > -1; j--) {
-        a.push(str[i][j]);
-      }
-      str[i] = a.join('');
+function capMe(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].split('');
+    for (let j = 0; j < arr[i].length; j++) {
+      if (j === 0) arr[i][j] = arr[i][j].toUpperCase();
+      else arr[i][j] = arr[i][j].toLowerCase();
     }
+    arr[i] = arr[i].join('');
   }
-  return console.log(str.join(' '));
-};
-
-reverse(
-  'Reverse the order of every word greater than or equal to five characters.'
-);
+  return arr;
+}
