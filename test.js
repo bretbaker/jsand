@@ -1,13 +1,24 @@
-function capMe(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].split('');
-    for (let j = 0; j < arr[i].length; j++) {
-      if (j === 0) arr[i][j] = arr[i][j].toUpperCase();
-      else arr[i][j] = arr[i][j].toLowerCase();
-    }
-    arr[i] = arr[i].join('');
-  }
-  return arr;
-}
+const codeTimer = (func, arg) => {
+  let start = process.hrtime.bigint();
+  func(arg);
+  let end = process.hrtime.bigint();
+  let time = end - start;
+  return console.log(`Process completed in ${time} nanoseconds`);
+};
 
-// starting jsand
+const addUpTo1 = n => {
+  let sum = 0;
+  for (let i = 0; i < n + 1; i++) {
+    sum += i;
+  }
+  return sum;
+};
+
+const addUpTo2 = n => {
+  return (n * (n + 1)) / 2;
+};
+
+console.log('\nFunction 1');
+codeTimer(addUpTo1, 1000000);
+console.log('\nFunction 2');
+codeTimer(addUpTo2, 1000000);
