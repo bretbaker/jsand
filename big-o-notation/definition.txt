@@ -1,0 +1,15 @@
+Big O notation is a mathematical notation that describes the limiting behavior of a function when the 
+argument tends towards a particular value or infinity.
+
+In computer science, big O notation is used to classify algorithms according to how their running time or 
+space requirements grow as the input size grows.
+
+ A description of a function in terms of big O notation usually only provides an upper bound on the growth
+  rate of the function.
+
+ Time Complexity - The time required for a function to complete
+ Space Complexity - The memory required for a function to complete
+- Most primitives (booleans, numbers, undefined, null) are constant space
+- Strings require O(n) space (where n is the string length)
+- Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for
+ objects)
