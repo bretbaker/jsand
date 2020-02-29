@@ -1,0 +1,15 @@
+Unordered, key-value pairs
+Great when you don't need order
+Great when you do need fast access, insertion, and removal
+
+Big O of basic Object interaction
+Insertion - O(1)
+Removal - O(1)
+Searching - O(n)
+Access - O(1)
+
+Big O of Object methods
+Object.keys - O(n)
+Object.values - O(n)
+Object.entries - O(n)
+Object.prototype.hasOwnProperty - O(1)

@@ -1,0 +1,24 @@
+Ordered lists
+Great when you need order
+
+Big O of basic Array interaction
+Insertion - O(n)
+Removal - O(n)
+^^^ the reason these are O(n) is because the array has to re-index each position upon performing
+^^^ the above unless the index position interacted with is the last position in the array
+Searching - O(n)
+Access - O(1)
+
+Big O of basic Array methods
+push - O(1)
+pop - O(1)
+shift - O(n)
+unshift - O(n)
+concat - O(n)
+slice - O(n)
+splice - O(n)
+sort - O(nlogn)
+forEach - O(n)
+map - O(n)
+filter - O(n)
+reduce - O(n)

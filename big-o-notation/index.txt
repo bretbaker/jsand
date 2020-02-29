@@ -9,6 +9,7 @@ space requirements grow as the input size grows.
 
  Time Complexity - The time required for a function to complete
  Space Complexity - The memory required for a function to complete
+ 
 - Most primitives (booleans, numbers, undefined, null) are constant space
 - Strings require O(n) space (where n is the string length)
 - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for
