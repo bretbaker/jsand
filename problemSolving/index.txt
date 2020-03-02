@@ -1,0 +1,26 @@
+Step-by-Step Process (Algorithm) for General Probelm Solving
+
+1. Understand the Problem
+  - Restate the problem in own words.
+  - What are the inputs?
+  - What are the expected outputs?
+  - Can the outputs be determined from the inputs?
+  - Do I have enough information to solve the problem?
+  - How should I label the important pieces of data that are part of the problem?
+
+2. Think of Real examples
+  - think of real examples to give problem context and help mind make connections
+
+3. Break it Down
+  - write out the step-by-step process required to solve the problem
+
+4. Solve/Simplify the Problem
+
+5. Look Back & Refactor
+  - Can you check the result?
+  - Can you derive the result differently?
+  - Can you understand it at a glance?
+  - Can you use the result or method for some other problem?
+  - Can you improve the performance of the solution?
+  - Can you think of other ways to refactor?
+  - How have other people solved this problem?

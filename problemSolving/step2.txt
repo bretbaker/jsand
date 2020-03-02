@@ -1,0 +1,8 @@
+Think of Real Examples 
+
+(think of examples to give problem context and help mind make connections)
+
+1. Start with simple examples
+2. Progress to more complex examples
+3. Explore examples with empty inputs
+4. Explore examples with invalid inputs

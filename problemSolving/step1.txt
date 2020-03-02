@@ -1,0 +1,8 @@
+Understand the Problem
+
+1. Restate the problem in own words.
+2. What are the inputs?
+3. What are the expected outputs?
+4. Can the outputs be determined from the inputs?
+ - Do I have enough information to solve the problem?
+5. How should I label the important pieces of data that are part of the problem?
