@@ -4,9 +4,7 @@
 // values are squared
 // returns true if condition passes; false otherwise
 const same = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+  if (arr1.length !== arr2.length) return false;
   for (let i = 0; i < arr1.length; i++) {
     let ind = arr2.indexOf(arr1[i] ** 2);
     if (ind === -1) {
