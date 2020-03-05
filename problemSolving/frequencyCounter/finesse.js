@@ -21,8 +21,6 @@ const same = (arr1, arr2) => {
       return false;
     }
   }
-  // console.log(fc1);
-  // console.log(fc2);
   return true;
 };
 

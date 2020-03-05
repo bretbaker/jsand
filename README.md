@@ -1,3 +1,3 @@
 # JavaScript Algorithms and Data Structures
 
-### This repository is an aggregation of computer science algorithms and data structures written in JavaScript.
+An aggregation of computer science algorithms, data structures, and more written in JavaScript.
