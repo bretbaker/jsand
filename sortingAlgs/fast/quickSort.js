@@ -1,4 +1,4 @@
-// O(n^2)
+// O(n log n)
 // First Version
 function pivot(arr, start = 0, end = arr.length + 1) {
   function swap(array, i, j) {

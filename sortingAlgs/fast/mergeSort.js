@@ -1,4 +1,4 @@
-// O (n log n)
+// O(n log n)
 // Merges two already sorted arrays
 function merge(arr1, arr2) {
   let results = [];
